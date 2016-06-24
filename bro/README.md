@@ -148,7 +148,7 @@ terminal üzerinden erişim oluşturulması gerekebilir:
 BroControl interaktif bir shelldir ve basit/çoklu sistemler üzerinde Bro 
 kurulumlarını kolayca yönetmeyi sağlar. 
 
-####*Minimal Başlangıç Konfigürasyonu*
+#####*Minimal Başlangıç Konfigürasyonu*
 
     1. İzlenecek interface için: $PREFIX/etc/node.cfg
     2. İzlenecek ağlar için: $PREFIX/etc/networks.cfg
@@ -178,7 +178,7 @@ Mevcut instance'ı durdurmak için:
 
     [BroControl] > stop
 
-####*Log Dosyalarına Göz Atma*
+#####*Log Dosyalarına Göz Atma*
 
 Default olarak, log dosyaları okunabilir ASCII formatında ve datalara göre organize edilmiş kolonlara yazılır. Loglar $PREFIX/logs/current dizininde tutulur (Eğer Bro çalışmıyorsa dizin boş olacaktır). Örnek bir log dosyası olarak `http.log`:
 
@@ -204,7 +204,7 @@ sürede bir arşivleme işlemi yapılacağı `$PREFIX/etc/broctl.cfg` dosyasınd
  düzenlenebilir.
  
 
-####*Bro Script*
+#####*Bro Script*
 
 Bro, önceden yazılmış ve tamamıyla özelleştirilebilir birçok script ile birlikte gelir. 
 Default olarak bütün bu scriptler `$PREFIX/share/bro` dizini altında yer alır 
@@ -218,7 +218,7 @@ Default konfigürasyonlar ile Standalone Bro instance'ını BroControl ile
 yönetmekteki ana nokta, `$PREFIX/share/bro/site/local.bro` scriptidir. 
 İlerleyen bölümlerde bahsedilecektir.
 
-####*Script Değerlerini Yeniden Tanımlamak*
+#####*Script Değerlerini Yeniden Tanımlamak*
 
 Bazı basit konfigürasyonlardaki değerler, Bro `&redef` operatörünü kullanarak 
 kendi değerleriniz ile değiştirilmeyi bekliyor olabilir. 
@@ -274,7 +274,7 @@ Bundan böyle SSL ile ilgili bildirimler görmezden gelinir.
 BroControl'ü tercih etmeyenler için Bro, doğrudan komut satırından live ve offline
  analiz aktiviteleri için kullanılabilir.
 
-####*Canlı Trafik İzlemek*
+#####*Canlı Trafik İzlemek*
 
 Herhangi bir interface üzerinde canlı trafiği izlemek için:
 
@@ -293,7 +293,7 @@ edilmediği ile ilgili hata verecektir. Bu bilgiler elle aşağıdaki gibi sağl
 
     bro -r mypackets.trace local "Site::local_nets += { 1.2.3.0/24, 5.6.7.0/24 }"
 
-####*Pcap (Packet Capture) Dosyalarını Okumak
+#####*Pcap (Packet Capture) Dosyalarını Okumak*
 
 Herhangi bir interface üzerinden paket yakalama ve bir dosyaya yazma işlemi 
 aşağıdaki gibi yapılabilir: 
@@ -307,7 +307,7 @@ tcpdump'a son verilir. Bro'nun toplanmış olan paketleri okuması için:
 
 Bro, log dosyalarını üzerinde çalışılan dizine çıkaracaktır.
 
-####*Bro'ya Hangi Scriptlerin Yüklenileceğini Söylemek*
+#####*Bro'ya Hangi Scriptlerin Yüklenileceğini Söylemek*
 
 Kullanım genel olarak şöyledir:
 
@@ -321,7 +321,7 @@ Son argüman, Bro bir işlem yaparken hangi policy scriptlerini kullanacağını
 
 Kullanılan scriptlerde en üstte kullanılan `@load` ifadesi, diğer scriptlere olan bağımlılığı belirtir. C-C++ dillerindeki `#include` gibi düşünülebilir, tek farkı `"eğer yüklenmediyse yükle"`dir.
 
-####*Bro'yu Kurulum Yapmadan Çalıştırmak*
+#####*Bro'yu Kurulum Yapmadan Çalıştırmak*
 
 Bro'yu doğrudan `/build` dizininden (`make install` yapmadan) çalıştırmak isteyen geliştiricilerin tek yapması gereken, başlamadan önce scriptlerin nereden yükleneceğini belirtmek için `BROPATH` ayarlaması yapmaktır. Devamı ise şöyledir:
 
