@@ -192,10 +192,12 @@ uri gibi kolonlar bulunmaktadır.
 Bazı log dosyalarından da özellikle bahsetmek gerekirse:
 
 > **conn.log**
+
 > Ağda görülen her bir yeni bağlantı için, bağlantının basit (süre, kaynak/hedef 
 > ip/port ve servis bilgileri gibi) bilgilerinin tutulduğu log dosyasıdır.
 > 
 **notice.log**
+
 > Bro tarafından tanımlanmış çeşitli aktiviteler ilgili bilgilendirmenin yapıldığı 
 > log dosyasıdır.
 
