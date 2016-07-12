@@ -5,6 +5,7 @@ Tcpdump, paket yakalama işlemini bitirdikten sonra, yakalanan paket sayısı il
 Tcpdump kullanılarak yapılacak paket yakala işleminde eğer bir filtreleme uygulanacak ise bu durumda Berkeley Packet Filter (BPF) ifadelerini kullanırız. Tcpdump, Windump, Wireshark ve gibi bir çok sniffer uygulaması BPD ifadelerini kullanarak filtre tanımı yapılmasına izin verir.
 
 ***TCPDUMP TARİHİ***
+
 İlk olarak 1987 yılında Van Jacobson, Craig Leres ve Steven McCanne tarafından Lawrence Berkeley Laboratory Research Group da çalışırlarken yazıldı. 1990'ların sonuna doğru çeşitli işletim sistemlerinin bir parçası olarak çok sayıda tcpdump versiyonu ve iyi düzenlenmemiş birçok yaması dağıtıldı. Michael Richardson ve Bill Fenner 1999 yılında tcpdump.org oluşturuldu. 
 
 Tcpdump ilk olarak Unix sistemler için yazılmış olsada daha sonra Windows'a port edilmiş ve *Windump* olarak adlandırılmıştır.
@@ -29,6 +30,7 @@ Temel parametrelere geçmeden önce;
 
  - Mantıksal (and ( && ), or ( || ), not ( ! ) ) ifadeler kullanılarak birden fazla filtreleme işlemi yapapılabilir.
  `#tcpdump -i wlan0 not arp and icmp`
+
 ***-A ==>*** Yakalanan paketlerin içeriğini ASCII formatında ekrana basar.
 ![enter image description here](http://www.teknikblog.org/wp-content/uploads/2015/08/3.png)
 
@@ -37,6 +39,7 @@ Temel parametrelere geçmeden önce;
 ***-C ==>*** Paketleri belirli boyutlarda kayıt etmek istenildiğinde kullanılır
 
     tcpdump i wlan0 -w kayit.pcap -C 100 // Paketleri 100 Mb'lık dosyalar halinde kayıt ederek tarama işlemine devam eder.
+    
 ***-D ==>*** Sistemde kullanılabilir olan ağ arayüzlerinin listesini verir.
 
     # tcpdump -D
