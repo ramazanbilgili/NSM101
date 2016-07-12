@@ -1,4 +1,5 @@
 ***TCPDUMP*** 
+
 Tcpdump Unix benzeri işletim sistemlerinde komut satırından çalışan genel bir paket analizcisidir. Bilgisayara gelen veri paketlerini kaydetmeye, incelemeye, filtremeleye yardımcı bir sistemdir. Kullanıcıya bağlı bulunduğu bir ağ üzerinden iletilen veya alınan TCP/IP paketlerini veya diğer paketleri yakalama ve gözlemleme olanağı sunar. BSD linansı altında dağıtılan tcpdump ücretsiz bir yazılımdır. 
 Tcpdump paket yakalamak için lilpcap kütüphanesini kullanır.
 Tcpdump, paket yakalama işlemini bitirdikten sonra, yakalanan paket sayısı ile ilgili bir rapor sunar. 
@@ -18,6 +19,7 @@ Bazı linux dağıtımlarda kurulmuş olan tcpdump programını komut satırına
 **sudo apt-get install tcpdump**
 
  Windows için ise http://www.winpcap.org adresindeki winpcap kütüphanesi indirilmeli ve sonrasında http://www.winpcap.org/windump adresinden Windump indirilerek yüklenebilir.
+ 
 ***TEMEL PARAMETRELER***
 Temel parametrelere geçmeden önce;
 
