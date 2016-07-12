@@ -31,7 +31,8 @@ Temel parametrelere geçmeden önce;
 	    #tcpdump -i wlan0 port 80 //Port numarası 80 olan paketleri yakalar
 
  - Mantıksal (and ( && ), or ( || ), not ( ! ) ) ifadeler kullanılarak birden fazla filtreleme işlemi yapapılabilir.
- `#tcpdump -i wlan0 not arp and icmp`
+ 
+	   `#tcpdump -i wlan0 not arp and icmp`
 
 ***-A ==>*** Yakalanan paketlerin içeriğini ASCII formatında ekrana basar.
 ![enter image description here](http://www.teknikblog.org/wp-content/uploads/2015/08/3.png)
